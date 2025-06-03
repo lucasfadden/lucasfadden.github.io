@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lucas Fadden – Academic Work</title>
+    <link rel="icon" href="https://lucasfadden.github.io/UoB_Graphic_RGB_24.jpg" type="image/x-icon">
+    <style>
+        html {
+            filter: grayscale(100%);
+        }
+
+        img {
+            filter: none !important;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eee;
+            color: #000;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #ccc;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            background-color: black;
+            color: white;
+            padding: 5px 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #aaa;
+        }
+
+        h2 {
+            border-bottom: 2px solid #aaa;
+            padding-bottom: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            font-size: 12px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Academic Work</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="academic.html">Academic Work</a>
+        <a href="music.html">Music</a>
+        <a href="art.html">Art</a>
+    </nav>
+
+    <main>
+        <h2>Featured Work</h2>
+        <ul>
+            <li><strong>Undergraduate Dissertation:</strong> <a href="https://lucasfadden.github.io/UGdissertation.pdf">View PDF</a></li>
+            <li><strong>CHI 2025 Submission:</strong> <a href="https://lucasfadden.github.io/main.pdf">View PDF</a></li>
+        </ul>
+
+        <h2>Research Focus</h2>
+        <p>I am pursuing a Master's by Research in Computer Science at the University of Bristol, focusing on human-computer interaction and sustainable technologies. My work investigates user engagement with energy-efficient systems and explores how AI can aid sustainable infrastructure adoption.</p>
+    </main>
+
+    <footer>
+        &copy; 2025 Lucas Fadden. All rights reserved.
+    </footer>
+</body>
+</html>
