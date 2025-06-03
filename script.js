@@ -1,7 +1,4 @@
-// Alert on page load (very 2000s-style)
-window.onload = function() {
-    alert("Welcome to Lucas Fadden's Portfolio Website!");
-};
+
 
 // Smooth scroll to sections
 document.querySelectorAll("nav a").forEach(anchor => {
