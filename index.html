@@ -2,99 +2,148 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucas Fadden</title>
     <link rel="icon" type="image/x-icon" href="https://lucasfadden.github.io/UoB_Graphic_RGB_24.jpg">
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #dcdcdc;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            color: #000;
         }
+
+        .container {
+            width: 960px;
+            margin: 0 auto;
+            background: #fff;
+            border: 1px solid #999;
+            box-shadow: 0 0 10px #aaa;
+        }
+
         header {
-            background-color: #333;
+            background: linear-gradient(to bottom, #4c6eb1, #2b4a87);
             color: #fff;
-            padding: 10px 0;
             text-align: center;
+            padding: 20px 0;
+            text-shadow: 1px 1px 2px #000;
+            border-bottom: 3px solid #1a2e5a;
         }
+
         nav {
-            margin: 20px;
-            text-align: center;
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #333;
-        }
-        section {
-            margin: 20px;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 5px;
-        }
-        footer {
+            background-color: #f1f1f1;
             text-align: center;
             padding: 10px 0;
-            background-color: #333;
+            border-bottom: 2px solid #ccc;
+        }
+
+        nav a {
+            display: inline-block;
+            background: linear-gradient(to bottom, #ffffff, #cccccc);
+            color: #000;
+            padding: 8px 15px;
+            margin: 0 5px;
+            border: 1px solid #888;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 1px 1px 3px #aaa;
+        }
+
+        nav a:hover {
+            background: linear-gradient(to bottom, #e0e0e0, #aaaaaa);
+            border-color: #444;
+        }
+
+        section {
+            padding: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        h2 {
+            color: #2b4a87;
+            border-bottom: 2px solid #aaa;
+            padding-bottom: 5px;
+        }
+
+        img {
+            border: 3px solid #666;
+            display: block;
+            margin: 10px 0;
+        }
+
+        ul {
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: #2b2b2b;
             color: #fff;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            text-align: center;
+            padding: 10px;
+            font-size: 12px;
+            border-top: 2px solid #444;
+        }
+
+        a {
+            color: #0044cc;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
+    <div class="container">
+        <header>
+            <h1>Welcome to My Portfolio</h1>
+        </header>
 
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-    </header>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
 
-    <nav>
-        <a href="#about">About Me</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="image.png" alt="Profile Picture" width="200">
+            <p>I am currently pursuing a Master’s by Research (MScR) in Computer Science at the University of Bristol, where I am affiliated with the Bristol Interaction Group (BIG) and the Cabot Institute for the Environment. My research focuses on the intersection of human-computer interaction (HCI) and sustainable technologies, with a particular emphasis on understanding user interactions with energy-efficient systems, such as heat pumps. By investigating the dynamics of user engagement and its impact on both technological performance and user satisfaction, I aim to contribute to the development of more effective and user-centric sustainable solutions.</p>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <img src="image.png" alt="Profile Picture" style="width: 200px; border-radius: 10px;">
-        <p>I am currently pursuing a Master’s by Research (MScR) in Computer Science at the University of Bristol, where I am affiliated with the Bristol Interaction Group (BIG) and the Cabot Institute for the Environment. My research focuses on the intersection of human-computer interaction (HCI) and sustainable technologies, with a particular emphasis on understanding user interactions with energy-efficient systems, such as heat pumps. By investigating the dynamics of user engagement and its impact on both technological performance and user satisfaction, I aim to contribute to the development of more effective and user-centric sustainable solutions.
+            <p>In addition to my primary research, I am deeply interested in exploring the potential of artificial intelligence (AI) to enhance the adoption, optimization, and integration of sustainable technologies and infrastructure. My work seeks to bridge the gap between technological innovation and user behavior, fostering a more sustainable future through interdisciplinary research and evidence-based insights.</p>
+        </section>
 
-        In addition to my primary research, I am deeply interested in exploring the potential of artificial intelligence (AI) to enhance the adoption, optimization, and integration of sustainable technologies and infrastructure. My work seeks to bridge the gap between technological innovation and user behavior, fostering a more sustainable future through interdisciplinary research and evidence-based insights.p>
-    </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Graphic Design</li>
+                <li>Problem Solving</li>
+            </ul>
+        </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML/CSS</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>Graphic Design</li>
-            <li>Problem Solving</li>
-        </ul>
-    </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>Here is some of my work:</p>
+            <ul>
+                <li><strong>Undergraduate Dissertation:</strong> <a href="https://lucasfadden.github.io/UGdissertation.pdf">linked here</a></li> 
+                <li><strong>CHI 2025 Submission:</strong> <a href="https://lucasfadden.github.io/main.pdf">linked here</a></li>
+            </ul>
+        </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <p>Here is some of my work:</p>
-        <ul>
-            <li><strong>Undergraduate Dissertation:</strong> <a href="https://lucasfadden.github.io/UGdissertation.pdf">linked here</a>    </li> 
-            <li><strong>CHI 2025 Submission:</strong> <a href="https://lucasfadden.github.io/main.pdf">linked here</a> </li>
-        </ul>
-    </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>If you'd like to get in touch with me, feel free to reach out via email at <a href="mailto:ob21626@bristol.ac.uk">ob21626@bristol.ac.uk</a>.</p>
+            <p><strong><a href="https://github.com/lucasfadden">GitHub</a></strong></p>
+            <p><strong><a href="https://research-information.bris.ac.uk/en/persons/lucas-j-a-fadden">University Page</a></strong></p>
+        </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>If you'd like to get in touch with me, feel free to reach out via email at <a href="mailto:[ob21626@bristol.ac.uk]">ob21626@bristol.ac.uk</a>.</p>
-        <p><strong><a href=https://github.com/lucasfadden>Github</a></strong></p>
-        <p><strong><a href=https://research-information.bris.ac.uk/en/persons/lucas-j-a-fadden>University page</a></strong></p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Lucas Fadden. All rights reserved.</p>
-    </footer>
-
+        <footer>
+            <p>&copy; 2025 Lucas Fadden. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>
