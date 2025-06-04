@@ -13,12 +13,16 @@
     filter: none !important;
 }
 
-   @font-face {
-            font-family: 'Fira Code Nerd Font';
-            src: local('FiraCode Nerd Font'), local('FiraCodeNerdFont'), local('Fira Code'),
-                 url('FiraCodeNerdFont.woff2') format('woff2'); /* Add your actual font file here */
-            font-weight: normal;
-            font-style: normal;
+@font-face {
+    font-family: 'FiraCode Nerd Font';
+    src: url('FiraCodeNerdFont-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'FiraCode Nerd Font', monospace;
+}
 
         header {
             background-color: #333;
