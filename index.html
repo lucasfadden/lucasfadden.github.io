@@ -9,9 +9,9 @@
             filter: grayscale(100%);
         }
 
-        img {
-            filter: none !important;
-        }
+.color-image {
+    filter: none !important;
+}
 
    @font-face {
             font-family: 'Fira Code Nerd Font';
@@ -102,13 +102,16 @@
 
     <main>
         <section id="about">
-            <div class="profile">
-                <img src="image.png" alt="Profile Picture" style="width: 200px; border-radius: 10px;">
-                <div class="intro-text">
-                    <div>Lucas Fadden</div>
-                    <div>Student at the University of Bristol,</div>
-                    <div>School of Computer Science</div>
-                </div>
+<div class="profile">
+    <div class="color-image">
+        <img src="image.png" alt="Profile Picture" style="width: 200px; border-radius: 10px;">
+    </div>
+    <div class="intro-text">
+        <div>Lucas Fadden</div>
+        <div>Student at the University of Bristol,</div>
+        <div>School of Computer Science</div>
+    </div>
+</div>
             </div>
             <h2>About Me</h2>
             <p>I am currently pursuing a Master’s by Research (MScR) in Computer Science at the University of Bristol, affiliated with the Bristol Interaction Group (BIG) and the Cabot Institute for the Environment. My research explores how human-computer interaction (HCI) can contribute to sustainable technologies, particularly through the study of user interaction with energy-efficient systems like heat pumps.</p>
