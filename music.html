@@ -1,170 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Lucas Fadden – Music Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="https://lucasfadden.github.io/UoB_Graphic_RGB_24.jpg">
-    <style>
-        /* Grayscale everything except images */
-        html {
-            filter: grayscale(100%);
-        }
+  <meta charset="UTF-8">
+  <title>Music – Lucas Fadden</title>
+  <link rel="icon" href="https://lucasfadden.github.io/UoB_Graphic_RGB_24.jpg" type="image/x-icon">
+  <style>
+    @font-face {
+      font-family: 'Fira Code Nerd Font';
+      src: local('FiraCode Nerd Font'), local('FiraCodeNerdFont'), local('Fira Code'),
+           url('FiraCodeNerdFont.woff2') format('woff2');
+    }
 
-        img {
-            filter: none !important;
-        }
+    html {
+      filter: grayscale(100%);
+    }
 
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #dcdcdc;
-            margin: 0;
-            padding: 0;
-            color: #000;
-        }
+    img,
+    .color-image {
+      filter: none !important;
+    }
 
-        .container {
-            width: 960px;
-            margin: 0 auto;
-            background: #fff;
-            border: 1px solid #999;
-            box-shadow: 0 0 10px #aaa;
-        }
+    body {
+      font-family: 'Fira Code Nerd Font', monospace;
+      margin: 0;
+      padding: 0;
+      background-color: #eee;
+      color: #000;
+    }
 
-        header {
-            background: linear-gradient(to bottom, #4c4c4c, #2b2b2b);
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-            text-shadow: 1px 1px 2px #000;
-            border-bottom: 3px solid #1a1a1a;
-        }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
 
-        nav {
-            background-color: #f1f1f1;
-            text-align: center;
-            padding: 10px 0;
-            border-bottom: 2px solid #ccc;
-        }
+    nav {
+      background-color: #ccc;
+      text-align: center;
+      padding: 10px;
+    }
 
-        nav a {
-            display: inline-block;
-            background: linear-gradient(to bottom, #ffffff, #cccccc);
-            color: #000;
-            padding: 8px 15px;
-            margin: 0 5px;
-            border: 1px solid #888;
-            text-decoration: none;
-            font-weight: bold;
-            box-shadow: 1px 1px 3px #aaa;
-        }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      background-color: black;
+      color: white;
+      padding: 5px 10px;
+      font-weight: bold;
+    }
 
-        nav a:hover {
-            background-color: white;
-            color: black;
-        }
+    nav a:hover {
+      background-color: white;
+      color: black;
+    }
 
-        section {
-            padding: 20px;
-            border-bottom: 1px solid #ccc;
-        }
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: white;
+      border: 1px solid #aaa;
+    }
 
-        h2 {
-            color: #2b2b2b;
-            border-bottom: 2px solid #aaa;
-            padding-bottom: 5px;
-        }
+    h2 {
+      border-bottom: 2px solid #aaa;
+      padding-bottom: 5px;
+    }
 
-        .music-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-        }
+    .audio-track {
+      margin-bottom: 20px;
+    }
 
-        .music-item img {
-            width: 150px;
-            height: auto;
-            margin-right: 20px;
-            border: 2px solid #444;
-        }
+    audio {
+      width: 100%;
+    }
 
-        .music-info h3 {
-            margin: 0 0 10px;
-        }
-
-        .music-info a {
-            background-color: black;
-            color: white;
-            padding: 4px 8px;
-            text-decoration: none;
-        }
-
-        .music-info a:hover {
-            background-color: white;
-            color: black;
-        }
-
-        footer {
-            background-color: #2b2b2b;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            font-size: 12px;
-            border-top: 2px solid #444;
-        }
-    </style>
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #333;
+      color: white;
+      font-size: 12px;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Music Portfolio</h1>
-        </header>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="#music">Music</a>
-            <a href="#contact">Contact</a>
-        </nav>
+  <header>
+    <h1>Music – Lucas Fadden</h1>
+  </header>
 
-        <section id="music">
-            <h2>My Music Projects</h2>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="academic.html">Academic Work</a>
+    <a href="music.html">Music</a>
+    <a href="art.html">Art</a>
+  </nav>
 
-            <div class="music-item">
-                <img src="album1.jpg" alt="Album Cover 1">
-                <div class="music-info">
-                    <h3>Electronic Exploration (2024)</h3>
-                    <p>A collection of ambient and downtempo tracks inspired by HCI and sustainable tech.</p>
-                    <a href="https://soundcloud.com/yourlink">Listen on SoundCloud</a>
-                </div>
-            </div>
+  <main>
+    <section>
+      <h2>My Music Portfolio</h2>
+      <p>This is a collection of my music compositions and audio experiments.</p>
 
-            <div class="music-item">
-                <img src="album2.jpg" alt="Album Cover 2">
-                <div class="music-info">
-                    <h3>Heat Pump Harmonies (2023)</h3>
-                    <p>Experimental audio series exploring the sonic potential of energy-efficient systems.</p>
-                    <a href="https://bandcamp.com/yourlink">Listen on Bandcamp</a>
-                </div>
-            </div>
+      <div class="audio-track">
+        <h3>Track Title 1</h3>
+        <audio controls>
+          <source src="track1.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
 
-            <div class="music-item">
-                <img src="album3.jpg" alt="Album Cover 3">
-                <div class="music-info">
-                    <h3>AI + Audio Sketches (2022)</h3>
-                    <p>Short compositions generated with the help of machine learning tools and feedback loops.</p>
-                    <a href="https://youtube.com/yourlink">Watch on YouTube</a>
-                </div>
-            </div>
-        </section>
+      <div class="audio-track">
+        <h3>Track Title 2</h3>
+        <audio controls>
+          <source src="track2.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:ob21626@bristol.ac.uk">ob21626@bristol.ac.uk</a></p>
-            <p><a href="https://github.com/lucasfadden">GitHub</a></p>
-        </section>
+      <!-- Add more tracks as needed -->
+    </section>
+  </main>
 
-        <footer>
-            <p>&copy; 2025 Lucas Fadden. All rights reserved.</p>
-        </footer>
-    </div>
+  <footer>
+    &copy; 2025 Lucas Fadden. All rights reserved.
+  </footer>
+
 </body>
 </html>
